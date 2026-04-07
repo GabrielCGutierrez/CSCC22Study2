@@ -1,12 +1,15 @@
 import unittest
 
-class testPalindrome (unittest.TestCase):
+class TestPalindrome(unittest.TestCase):
     def test_isPalindrome(self):
-        s = "racecar"
-        self.assertEqual(isPalindrome(s), "racecar")
+        self.assertTrue(isPalindrome(self, "racecar"))
 
 def isPalindrome(self, s):
-    return "racecar"
+    if s[::-1] == s:
+        return True
+    else:
+        return False
 
 if __name__ == '__main__':
     unittest.main()
+
