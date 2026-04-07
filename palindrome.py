@@ -5,10 +5,8 @@ class TestPalindrome(unittest.TestCase):
         self.assertTrue(isPalindrome(self, "racecar"))
 
 def isPalindrome(self, s):
-    if s[::-1] == s:
-        return True
-    else:
-        return False
+    return s[::-1] == s
+     
 
 if __name__ == '__main__':
     unittest.main()
